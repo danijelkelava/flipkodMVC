@@ -2,15 +2,9 @@
 
 namespace App\Model;
 
-abstract class GeometryShape
+use App\Model\GeometryShapeInterface;
+
+abstract class GeometryShape implements GeometryShapeInterface
 {
-	public function Surface()
-	{
 
-	}
-
-	public function Circumference()
-	{
-		
-	}
 }
