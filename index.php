@@ -2,7 +2,10 @@
 
 require "vendor/autoload.php";
 
-use App\Circle;
+use App\Bootstrap\Bootstrap;
+use App\Models\Circle;
+use App\Models\Triangle;
 
-$circle = new Circle;
-var_dump($circle);
+$bootstrap = new Bootstrap($_GET);
+
+var_dump($bootstrap);

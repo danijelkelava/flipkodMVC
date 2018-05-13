@@ -1,8 +1,6 @@
 <?php 
 
-namespace App;
-
-use App\Model\GeometryShape;
+namespace App\Models;
 
 class Triangle extends GeometryShape
 {

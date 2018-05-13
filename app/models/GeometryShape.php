@@ -1,8 +1,6 @@
 <?php 
 
-namespace App\Model;
-
-use App\Model\GeometryShapeInterface;
+namespace App\Models;
 
 abstract class GeometryShape implements GeometryShapeInterface
 {
