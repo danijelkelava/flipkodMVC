@@ -1,6 +1,6 @@
 <?php
 
-require "vendor/autoload.php";
+require "../vendor/autoload.php";
 
 use App\Core\App;
 use App\Models\Triangle;
@@ -13,5 +13,3 @@ $get_triangle_data = new TriangleController($triangle);
 $info = $get_triangle_data->getTriangleData();
 //var_dump($info);
 echo $info;
-
-
