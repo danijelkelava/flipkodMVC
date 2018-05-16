@@ -11,7 +11,7 @@ class App
 	public function __construct()
 	{
 		$url = $this->parseUrl();
-		var_dump($url);
+		//var_dump($url);
 		if (isset($url) && file_exists('../app/controllers/' . ucfirst($url[0]) . 'Controller.php')) {
 			$this->controller = '\App\Controllers\\' . ucfirst($url[0]) . 'Controller';
 			unset($url[0]);
@@ -28,7 +28,11 @@ class App
 			}
 		}
 
-		print_r($url);
+		//print_r($url);
+
+		$this->params = $url ? array_values($url) : [];
+
+		print_r($this->params);
 	}
 
 	public function parseUrl()
