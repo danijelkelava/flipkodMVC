@@ -21,7 +21,7 @@ class TriangleController extends Controller
 		echo 'triangle/index';
 	}
 
-	public function getTriangleData()
+	public function getData()
 	{
 		return json_encode($this->data);
 	}
