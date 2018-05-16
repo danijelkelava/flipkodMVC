@@ -9,9 +9,9 @@ class TriangleController extends Controller
 	private $triangle;
 	private $data = [];
 
-	public function __construct(Triangle $triangle)
+	public function __construct()
 	{
-		$this->triangle = $triangle;
+		$this->triangle = new Triangle('triangle', 3, 4, 5);
 		$this->data['type'] = $this->triangle->getType();
 		$this->data['circumference'] = $this->triangle->circumference();		
 	}
