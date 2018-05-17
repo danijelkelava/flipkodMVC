@@ -32,7 +32,7 @@ class App
 
 		$this->params = $url ? array_values($url) : [];
 
-		print_r($this->params);
+		//print_r($this->params);
 
 		call_user_func_array( [$this->controller, $this->method] , $this->params);
 	}

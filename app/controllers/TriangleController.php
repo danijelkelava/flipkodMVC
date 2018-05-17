@@ -16,14 +16,10 @@ class TriangleController extends Controller
 		$this->data['circumference'] = $this->triangle->circumference();		
 	}
 
-	public function index()
+	public function index($a = '', $b = '', $c = '')
 	{
-		echo 'triangle/index';
-	}
-
-	public function getData()
-	{
-		return json_encode($this->data);
+		echo $a . ' ' . $b . ' ' . $c;
+		//echo json_encode($this->data);
 	}
 
 }
