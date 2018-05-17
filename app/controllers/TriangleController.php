@@ -6,12 +6,10 @@ use App\Models\Triangle;
 
 class TriangleController extends Controller
 {
-	private $triangle;
 	private $data = [];
 
 	public function __construct()
-	{		
-	}
+	{}
 
 	public function index($a = '', $b = '', $c = '')
 	{
