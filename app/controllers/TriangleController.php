@@ -14,9 +14,10 @@ class TriangleController extends Controller
 	public function index($a = '', $b = '', $c = '')
 	{
 		if (is_numeric($a) && is_numeric($b) && is_numeric($c)) {
-			$triangle = new Triangle('triangle', $a, $b, $c);
+			$triangle = new Triangle($a, $b, $c);
 			$this->data['type'] = $triangle->getType();
 			$this->data['circumference'] = $triangle->circumference();
+			$this->data['area'] = $triangle->area();
 			echo json_encode($this->data);
 		}
 		
