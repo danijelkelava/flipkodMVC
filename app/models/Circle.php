@@ -5,6 +5,7 @@ namespace App\Models;
 class Circle extends GeometryShape
 {
 	private $radius;
+	const PI = M_PI;
 
 	public function __construct($radius)
 	{
@@ -14,13 +15,15 @@ class Circle extends GeometryShape
 	
 	public function area()
 	{
+		$area = self::PI * pow($this->radius, 2);
+
+		return $area;
 	}
 
 	public function circumference()
 	{
-		$pi = pi();
 
-		$circumference = 2 * $pi * $this->radius;
+		$circumference = 2 * self::PI * $this->radius;
 
 		return $circumference;
 	}

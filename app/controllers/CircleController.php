@@ -17,6 +17,7 @@ class CircleController extends Controller
 			$circle = new Circle($radius);
 			$this->data['type'] = $circle->getType();
 			$this->data['circumference'] = $circle->circumference();
+			$this->data['area'] = $circle->area();
 			echo json_encode($this->data);
 		}
 	}
