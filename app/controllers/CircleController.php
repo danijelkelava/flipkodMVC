@@ -16,6 +16,7 @@ class CircleController extends Controller
 		if (is_numeric($radius)) {
 			$circle = new Circle($radius);
 			$this->data['type'] = $circle->getType();
+			$this->data['radius'] = $circle->getRadius();
 			$this->data['circumference'] = $circle->circumference();
 			$this->data['area'] = $circle->area();
 			echo json_encode($this->data);

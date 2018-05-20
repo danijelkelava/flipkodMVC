@@ -14,9 +14,19 @@ class Triangle extends GeometryShape
 		$this->c = $c;
 	}
 
-	public function getSideLengths()
+	public function getA()
 	{
-		return $sideLengths;
+		return number_format((float)$this->a, 1, '.', '');
+	}
+
+	public function getB()
+	{
+		return number_format((float)$this->b, 1, '.', '');
+	}
+
+	public function getC()
+	{
+		return number_format((float)$this->c, 1, '.', '');
 	}
 
 	public function area()
