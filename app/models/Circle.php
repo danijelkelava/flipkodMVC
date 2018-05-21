@@ -7,7 +7,7 @@ class Circle extends GeometryShape
 	private $radius;
 	const PI = M_PI;
 
-	public function __construct(int $radius)
+	public function __construct($radius)
 	{
 		$this->type = 'circle';
 		$this->radius = $radius;
