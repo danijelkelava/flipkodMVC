@@ -18,11 +18,11 @@ class GeometryCalculator
 
 	public function sumOfAreas()
 	{
-		return $triangle->area() + $circle->area();
+		return $this->triangle->area() + $circle->area();
 	}
 
 	public function sumOfCircumferences()
 	{
-		return $triangle->circumference() + $circle->circumference();
+		return $this->triangle->circumference() + $circle->circumference();
 	}
 }
